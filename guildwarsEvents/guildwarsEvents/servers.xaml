@@ -32,8 +32,8 @@
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
-                            <TextBlock Style="{StaticResource PhoneTextTitle2Style}" Foreground="{StaticResource PhoneContrastBackgroundBrush}" />
-                            <TextBlock Style="{StaticResource PhoneTextSubtleStyle}" Foreground="{StaticResource PhoneAccentBrush}" />
+                            <TextBlock Text="{Binding name}" Style="{StaticResource PhoneTextTitle2Style}" Foreground="{StaticResource PhoneContrastBackgroundBrush}" />
+                            <TextBlock Text="{Binding id}" Style="{StaticResource PhoneTextSubtleStyle}" Foreground="{StaticResource PhoneAccentBrush}" />
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

@@ -29,18 +29,23 @@ namespace guildwarsEvents
 
         private void GetServerData()
         {
-            string serverRequest = "https://api.guildwars2.com/v1";
+            string serverRequest = "https://api.guildwars2.com/";
             var client = new RestClient(serverRequest);
             var request = new RestRequest();
-            request.Resource = "world_names.json";
+            request.Resource = "v1/world_names.json";
+            request.Method = Method.GET;
+            //client.Execute(request);
 
-            client.ExecuteAsync(request, response =>
+
+            client.ExecuteAsync<List<World>>(request, response =>
             {
-                System.Diagnostics.Debug.WriteLine(response.Content);
+                System.Diagnostics.Debug.WriteLine(response.Data[0].name);
+                serverList.ItemsSource = null;
+                serverList.ItemsSource = response.Data;
+                
             });
 
-            serverList.ItemsSource = null;
-           
+            
 
 
         }

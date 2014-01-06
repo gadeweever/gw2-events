@@ -53,8 +53,9 @@ namespace guildwarsEvents
 
         private void SetServer(object sender, SelectionChangedEventArgs e)
         {
-            ListBoxItem selected = sender as ListBoxItem;
-            int i = 10;
+            Globals.WorldID = (serverList.SelectedItem as World).id;
+            System.Diagnostics.Debug.WriteLine(Globals.WorldID);
+
         }
 
         

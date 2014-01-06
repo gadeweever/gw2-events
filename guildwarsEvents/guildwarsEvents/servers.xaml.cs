@@ -53,7 +53,8 @@ namespace guildwarsEvents
 
         private void SetServer(object sender, SelectionChangedEventArgs e)
         {
-            
+            ListBoxItem selected = sender as ListBoxItem;
+            int i = 10;
         }
 
         

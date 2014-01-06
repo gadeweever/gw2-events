@@ -2,5 +2,6 @@
   <Deployment.Parts>
     <AssemblyPart x:Name="guildwarsEvents" Source="guildwarsEvents.dll" />
     <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="RestSharp.WindowsPhone" Source="RestSharp.WindowsPhone.dll" />
   </Deployment.Parts>
 </Deployment>

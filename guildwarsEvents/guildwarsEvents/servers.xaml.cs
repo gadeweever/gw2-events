@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using RestSharp;
 
 namespace guildwarsEvents
 {
@@ -20,37 +21,34 @@ namespace guildwarsEvents
             
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            
+        }
+
         private void GetServerData()
         {
-            string serverRequest = "https://api.guildwars2.com/v1/world_names.json";
-            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(serverRequest);
-            request.BeginGetResponse(RequestCallback, request);
+            string serverRequest = "https://api.guildwars2.com/v1";
+            var client = new RestClient(serverRequest);
+            var request = new RestRequest();
+            request.Resource = "world_names.json";
 
-        }
-
-        private void RequestCallback(IAsyncResult result)
-        {
-            HttpWebRequest request = result.AsyncState as HttpWebRequest;
-            if (request != null)
+            client.ExecuteAsync(request, response =>
             {
-                try
-                {
-                    WebResponse response = request.EndGetResponse(result);
-                    serverList.ItemsSource = null;
-                    
-                }
-                catch (WebException e)
-                {
-                    Globals.WorldID = -1;
-                    return;
-                }
-            }
+                System.Diagnostics.Debug.WriteLine(response.Content);
+            });
+
+            serverList.ItemsSource = null;
+           
+
 
         }
+
 
         private void SetServer(object sender, SelectionChangedEventArgs e)
         {
-
+            
         }
 
         

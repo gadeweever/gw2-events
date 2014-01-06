@@ -70,3 +70,5 @@ C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\D
 C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\obj\Debug\guildwarsEvents.csprojResolveAssemblyReference.cache
 C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\obj\Debug\servers.g.cs
+C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\Debug\RestSharp.WindowsPhone.dll
+C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\Debug\RestSharp.WindowsPhone.xml

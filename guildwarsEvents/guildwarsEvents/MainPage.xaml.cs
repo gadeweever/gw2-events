@@ -20,11 +20,12 @@ namespace guildwarsEvents
 
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
+            
         }
 
         private void NavigateSettings(object sender, EventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/servers.xaml", UriKind.Relative));
         }
 
     }

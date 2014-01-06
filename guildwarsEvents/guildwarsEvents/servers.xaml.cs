@@ -34,8 +34,6 @@ namespace guildwarsEvents
             var request = new RestRequest();
             request.Resource = "v1/world_names.json";
             request.Method = Method.GET;
-            //client.Execute(request);
-
 
             client.ExecuteAsync<List<World>>(request, response =>
             {
@@ -44,10 +42,6 @@ namespace guildwarsEvents
                 serverList.ItemsSource = response.Data;
                 
             });
-
-            
-
-
         }
 
 
@@ -55,9 +49,7 @@ namespace guildwarsEvents
         {
             Globals.WorldID = (serverList.SelectedItem as World).id;
             System.Diagnostics.Debug.WriteLine(Globals.WorldID);
-
         }
-
-        
+    
     }
 }

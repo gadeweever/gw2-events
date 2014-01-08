@@ -36,6 +36,8 @@
                 <TextBlock Text="All Events" Tap="NavigateEvents" Style="{StaticResource PhoneTextTitle2Style}"/>
                 <TextBlock Text="Map Events" Tap="NavigateMaps" Style="{StaticResource PhoneTextTitle2Style}" />
                 <Rectangle Fill="{StaticResource PhoneAccentBrush}" Stroke="{StaticResource PhoneAccentBrush}" Height="3" Margin="12,12"/>
+                <TextBlock Text="Current Server" Tap="NavigateMaps" Style="{StaticResource PhoneTextTitle2Style}" />
+                <TextBlock x:Name="serverText" Tap="NavigateMaps" Style="{StaticResource PhoneTextTitle3Style}" Foreground="{StaticResource PhoneAccentBrush}"/>
                 <TextBlock Text="Pinned Items" Style="{StaticResource PhoneTextTitle2Style}"/>
                 <ListBox x:Name="pinnedList">
                     <ListBox.ItemTemplate>

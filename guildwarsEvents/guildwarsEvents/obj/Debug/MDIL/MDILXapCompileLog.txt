@@ -8,6 +8,8 @@ MDIL image C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsE
 
 
 File C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\Debug\MDIL\guildwarsEvents.dll output C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\obj\Debug\MDIL\guildwarsEvents.dll
+Processing file: C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\Debug\MDIL\Microsoft.Phone.Controls.dll
+File C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\Debug\MDIL\Microsoft.Phone.Controls.dll is not in the compile filter. Skipping.
 Processing file: C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\Debug\MDIL\Microsoft.Phone.Controls.Toolkit.dll
 File C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\Debug\MDIL\Microsoft.Phone.Controls.Toolkit.dll is not in the compile filter. Skipping.
 Processing file: C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\Debug\MDIL\RestSharp.WindowsPhone.dll

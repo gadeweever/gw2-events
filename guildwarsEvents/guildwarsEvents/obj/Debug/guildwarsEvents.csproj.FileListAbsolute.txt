@@ -75,3 +75,5 @@ C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\D
 C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\obj\Debug\EventDetailPage.g.cs
 C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\obj\Debug\EventPage.g.cs
 C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\obj\Debug\MapDetailPage.g.cs
+C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\obj\Debug\MapPage.g.cs

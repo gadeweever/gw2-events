@@ -35,7 +35,7 @@ namespace guildwarsEvents
             request.Resource = "v1/map_names.json";
             request.Method = Method.GET;
 
-            client.ExecuteAsync<List<World>>(request, response =>
+            client.ExecuteAsync<List<GuildMap>>(request, response =>
             {
                 //System.Diagnostics.Debug.WriteLine(response.Data[0].name);
                 mapList.ItemsSource = null;

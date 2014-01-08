@@ -48,7 +48,7 @@ namespace guildwarsEvents
         {
             Globals.WorldID = (serverList.SelectedItem as World).id;
             System.Diagnostics.Debug.WriteLine(Globals.WorldID);
-            MessageBox.Show("Server set as" + (serverList.SelectedItem as World).name;
+            MessageBox.Show("Server set as " + (serverList.SelectedItem as World).name);
             NavigationService.GoBack();
         }
     

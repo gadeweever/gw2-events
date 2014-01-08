@@ -23,7 +23,7 @@
                     <ListBox x:Name="mapList" SelectionChanged="NavigateMapDetail">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding name}" />
+                                <TextBlock Text="{Binding name}" Style="{StaticResource PhoneTextTitle2Style}"/>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>

@@ -72,3 +72,6 @@ C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\obj\D
 C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\obj\Debug\servers.g.cs
 C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\Debug\RestSharp.WindowsPhone.dll
 C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\Debug\RestSharp.WindowsPhone.xml
+C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\obj\Debug\EventDetailPage.g.cs
+C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\obj\Debug\EventPage.g.cs
+C:\Users\Gamal\Documents\GitHub\gw2-events\guildwarsEvents\guildwarsEvents\Bin\Debug\Microsoft.Phone.Controls.dll

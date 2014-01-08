@@ -10,16 +10,11 @@ using Microsoft.Phone.Shell;
 
 namespace guildwarsEvents
 {
-    public partial class EventPage : PhoneApplicationPage
+    public partial class MapDetailPage : PhoneApplicationPage
     {
-        public EventPage()
+        public MapDetailPage()
         {
             InitializeComponent();
-        }
-
-        private void NavigateDetailPage(object sender, SelectionChangedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/EventDetailPage.xaml", UriKind.Relative));
         }
     }
 }

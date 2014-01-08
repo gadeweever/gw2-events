@@ -12,6 +12,7 @@ namespace guildwarsEvents
         private static int _worldID;
         private static int _mapID;
         private static int _eventID;
+        private static World _currentWorld;
         #endregion
 
         #region Variable Definitions
@@ -50,9 +51,19 @@ namespace guildwarsEvents
                 _eventID = value;
             }
         }
+
+        public static World CurrentServer
+        {
+            get
+            {
+                return _currentWorld;
+            }
+            set
+            {
+                _currentWorld = value;
+            }
+        }
         #endregion
-
-
 
     }
 }

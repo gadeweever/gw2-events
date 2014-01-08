@@ -9,22 +9,22 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using RestSharp;
 
+
 namespace guildwarsEvents
 {
-    public partial class servers : PhoneApplicationPage
+    public partial class MapPage : PhoneApplicationPage
     {
-        
-        public servers()
+        public MapPage()
         {
             InitializeComponent();
             GetServerData();
-            
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        private void NavigateMapDetail(object sender, SelectionChangedEventArgs e)
         {
-            base.OnNavigatedTo(e);
-            
+            Globals.MapID = (mapList.SelectedItem as GuildMap).id;
+            System.Diagnostics.Debug.WriteLine(Globals.WorldID);
+            NavigationService.Navigate(new Uri("/MapDetailPage.xaml", UriKind.Relative));
         }
 
         private void GetServerData()
@@ -32,25 +32,17 @@ namespace guildwarsEvents
             string serverRequest = "https://api.guildwars2.com/";
             var client = new RestClient(serverRequest);
             var request = new RestRequest();
-            request.Resource = "v1/world_names.json";
+            request.Resource = "v1/map_names.json";
             request.Method = Method.GET;
 
             client.ExecuteAsync<List<World>>(request, response =>
             {
                 //System.Diagnostics.Debug.WriteLine(response.Data[0].name);
-                serverList.ItemsSource = null;
-                serverList.ItemsSource = response.Data;
-                
+                mapList.ItemsSource = null;
+                mapList.ItemsSource = response.Data;
+
             });
         }
 
-        private void SetServer(object sender, SelectionChangedEventArgs e)
-        {
-            Globals.WorldID = (serverList.SelectedItem as World).id;
-            System.Diagnostics.Debug.WriteLine(Globals.WorldID);
-            MessageBox.Show("Server set as" + (serverList.SelectedItem as World).name;
-            NavigationService.GoBack();
-        }
-    
     }
 }

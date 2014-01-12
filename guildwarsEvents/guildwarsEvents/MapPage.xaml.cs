@@ -23,6 +23,7 @@ namespace guildwarsEvents
         private void NavigateMapDetail(object sender, SelectionChangedEventArgs e)
         {
             Globals.MapID = (mapList.SelectedItem as GuildMap).id;
+            Globals.CurrentMap = mapList.SelectedItem as GuildMap;
             //System.Diagnostics.Debug.WriteLine(Globals.WorldID);
             NavigationService.Navigate(new Uri("/MapDetailPage.xaml", UriKind.Relative));
         }

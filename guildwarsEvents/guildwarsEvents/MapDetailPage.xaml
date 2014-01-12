@@ -16,7 +16,7 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <!--Pivot Control-->
-        <phone:Pivot x:Name="mapPageDetailTitle">
+        <phone:Pivot x:Name="mapPageDetailTitle" >
             <!--Pivot item one-->
             <phone:PivotItem Header="events">
                 <Grid/>
@@ -30,7 +30,7 @@
     </Grid>
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar>
-            <shell:ApplicationBarIconButton Text="add" IconUri="" />
+            <shell:ApplicationBarIconButton Text="add" IconUri="Toolkit.Content/ApplicationBar.Add.png" Click="ToggleFavorite" />
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
     

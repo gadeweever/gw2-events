@@ -12,23 +12,29 @@ namespace guildwarsEvents
     public static class Globals
     {
         #region Variable Declarations
-        private static int _worldID;
         private static int _mapID;
         private static int _eventID;
         private static GuildWorld _currentWorld;
+        private static GuildMap _currentMap;
         private static SaveData _saveData;
+        private static GuildEvent _currentEvent;
         #endregion
 
         #region Variable Definitions
-        public static int WorldID
+        public static GuildEvent CurrentEvent
+        {
+            get { return _currentEvent; }
+            set { _currentEvent = value; }
+        }
+        public static GuildMap CurrentMap
         {
             get
             {
-                return _worldID;
+                return _currentMap;
             }
             set
             {
-                _worldID = value;
+                _currentMap = value;
             }
         }
 

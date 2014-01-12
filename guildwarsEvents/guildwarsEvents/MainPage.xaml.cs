@@ -21,6 +21,7 @@ namespace guildwarsEvents
         {
             InitializeComponent();
             myData = new SaveData();
+            Globals.StorageSave = myData;
             LoadStoredData();
 
 
@@ -72,7 +73,7 @@ namespace guildwarsEvents
                 else
                 {
                     using (var fs = new IsolatedStorageFileStream(
-                     "assignments.dat", FileMode.Open, filesystem))
+                     "saveData.dat", FileMode.Open, filesystem))
                     {
                         var serializer = new System.Runtime.Serialization
                           .Json.DataContractJsonSerializer(typeof(

@@ -97,6 +97,8 @@
       <DependentUpon>EventDetailPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Globals.cs" />
+    <Compile Include="GuildEvent.cs" />
+    <Compile Include="GuildLocation.cs" />
     <Compile Include="GuildMap.cs" />
     <Compile Include="GuildWorld.cs" />
     <Compile Include="LocalizedStrings.cs" />

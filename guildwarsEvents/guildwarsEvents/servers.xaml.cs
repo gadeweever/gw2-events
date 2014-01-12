@@ -37,6 +37,8 @@ namespace guildwarsEvents
 
             client.ExecuteAsync<List<GuildWorld>>(request, response =>
             {
+                foreach (GuildWorld item in response.Data)
+                    item.setRegion();
                 //System.Diagnostics.Debug.WriteLine(response.Data[0].name);
                 serverList.ItemsSource = null;
                 serverList.ItemsSource = response.Data;
@@ -46,8 +48,7 @@ namespace guildwarsEvents
 
         private void SetServer(object sender, SelectionChangedEventArgs e)
         {
-            Globals.WorldID = (serverList.SelectedItem as GuildWorld).id;
-            System.Diagnostics.Debug.WriteLine(Globals.WorldID);
+            //System.Diagnostics.Debug.WriteLine(Globals.WorldID);
             MessageBox.Show("Server set as " + (serverList.SelectedItem as GuildWorld).name);
             Globals.StorageSave.setWorld(serverList.SelectedItem as GuildWorld);
             Globals.CurrentServer = serverList.SelectedItem as GuildWorld;

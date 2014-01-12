@@ -34,11 +34,11 @@ namespace guildwarsEvents
             request.Method = Method.GET;
             request.RootElement = "events";
 
-            client.ExecuteAsync<Dictionary<string, GuildEvent>>(request, response =>
+            client.ExecuteAsync<Dictionary<string, GuildEventResponse>>(request, response =>
             {
 
                 
-                GuildEvent example = response.Data["703E5B36-63E8-4150-B0E3-68535CBFB144"];
+                GuildEventResponse example = response.Data["703E5B36-63E8-4150-B0E3-68535CBFB144"];
                 //eventList.ItemsSource = gothby.Content;
             });
 

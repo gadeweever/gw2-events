@@ -98,6 +98,8 @@
     </Compile>
     <Compile Include="Globals.cs" />
     <Compile Include="GuildEvent.cs" />
+    <Compile Include="GuildEventResponse.cs" />
+    <Compile Include="GuildEventResult.cs" />
     <Compile Include="GuildLocation.cs" />
     <Compile Include="GuildMap.cs" />
     <Compile Include="GuildWorld.cs" />

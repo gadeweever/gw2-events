@@ -8,6 +8,8 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using RestSharp;
+using GW2DotNET.V1.World;
+
 
 namespace guildwarsEvents
 {
@@ -25,7 +27,7 @@ namespace guildwarsEvents
             NavigationService.Navigate(new Uri("/EventDetailPage.xaml", UriKind.Relative));
         }
 
-        private void GetServerData()
+        private void GetServerData2()
         {
             string serverRequest = "https://api.guildwars2.com/";
             var client = new RestClient(serverRequest);
@@ -43,6 +45,13 @@ namespace guildwarsEvents
             });
 
             eventList.ItemsSource = null;
+        }
+
+        private void GetServerData()
+        {
+            GW2DotNET.V1.World.WorldManager wm = new GW2DotNET.V1.World.WorldManager();
+
+
         }
 
         
